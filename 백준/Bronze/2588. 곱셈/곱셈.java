@@ -1,15 +1,15 @@
 import java.io.*;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner in = new Scanner(System.in);
-        int a = in.nextInt();
-        int b = in.nextInt();
-        in.close();
-        System.out.println(a*(b%10));
-        System.out.println(a*(b%100/10));
-        System.out.println(a*(b/100));
-        System.out.println(a*b);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int a = Integer.parseInt(br.readLine());
+        int b = Integer.parseInt(br.readLine());
+        br.close();
+
+        System.out.println(a * (b % 10));
+        System.out.println(a * (b % 100 / 10));
+        System.out.println(a * (b / 100));
+        System.out.println(a * b);
     }
 }
